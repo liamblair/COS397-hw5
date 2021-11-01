@@ -24,7 +24,14 @@ def bubble(int_list):
   '''
   bubble docstring
   '''
-  pass
+
+  for i in range(len(int_list)):
+    for j in range(0, len(int_list) - i - 1):
+      if int_list[j] > int_list[j+1]:
+        tmp = int_list[j]
+        int_list[j] = int_list[j+1]
+        int_list[j+1] = tmp
+
   
 def quick(int_list):
   '''
@@ -32,8 +39,18 @@ def quick(int_list):
   '''
   pass
   
+        
+  
 def insertion(int_list):
   '''
   insertion docstring
   '''
-  pass
+  
+  for i in range(1, len(int_list)):
+      val = int_list[i]
+
+      j = i - 1
+      while j >= 0 and val < int_list[j]:
+              int_list[j+1] = int_list[j]
+              j -= 1
+      int_list[j+1] = val
