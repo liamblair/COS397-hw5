@@ -1,6 +1,5 @@
 # COS 397 Exercise
 
-This is a skeleton repository for your exercise. 
 The goal of this exercise is to implement a Python package for sorting integer 
 lists using the DevOps software development approach.
 
