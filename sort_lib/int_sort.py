@@ -33,13 +33,40 @@ def bubble(int_list):
         int_list[j+1] = tmp
 
   
-def quick(int_list):
+def quick(int_list, start, end):
   '''
   qsort docstring
   '''
-  pass
-  
+
+  if start < end:
+    pivot = partition(int_list, start, end)
+    quick(int_list, start, pivot-1)
+    quick(int_list, pivot+1, end)
         
+
+def partition(int_list, start, end):
+  '''
+  partition docstring
+  '''
+  
+  pivot = int_list[end]
+
+  i = start - 1
+
+  for j in range(start, end):
+    if int_list[j] <= pivot:
+      i = i + 1
+
+      tmp = int_list[j]
+      int_list[j] = int_list[i]
+      int_list[i] = tmp
+  
+  tmp = int_list[i+1]
+  int_list[i+1] = int_list[end]
+  int_list[end] = tmp
+
+  return i + 1
+
   
 def insertion(int_list):
   '''
@@ -47,10 +74,10 @@ def insertion(int_list):
   '''
   
   for i in range(1, len(int_list)):
-      val = int_list[i]
+    val = int_list[i]
 
-      j = i - 1
-      while j >= 0 and val < int_list[j]:
-              int_list[j+1] = int_list[j]
-              j -= 1
-      int_list[j+1] = val
+    j = i - 1
+    while j >= 0 and val < int_list[j]:
+      int_list[j+1] = int_list[j]
+      j -= 1
+    int_list[j+1] = val
