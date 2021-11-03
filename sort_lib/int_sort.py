@@ -22,7 +22,12 @@ This module sorts lists of integers...
 
 def bubble(int_list):
   '''
-  bubble docstring
+  Sort an array using Bubble Sort
+
+  Parameters
+  ----------
+  int_list : list of ints
+    list to be sorted
   '''
 
   for i in range(len(int_list)):
@@ -35,7 +40,16 @@ def bubble(int_list):
   
 def quick(int_list, start, end):
   '''
-  qsort docstring
+  Recursive function to sort with Quick Sort
+
+  Parameters
+  ----------
+  int_list : list of ints
+    list to be sorted
+  start : int
+    starting index
+  end : int
+    ending index
   '''
 
   if start < end:
@@ -46,7 +60,21 @@ def quick(int_list, start, end):
 
 def partition(int_list, start, end):
   '''
-  partition docstring
+  Sort the array until the pivot value
+
+  Parameters
+  ----------
+  int_list : list of ints
+    list to be sorted
+  start : int
+    starting index
+  end : int
+    ending index
+  
+  Returns
+  -------
+  int
+    the index to partition the list around
   '''
   
   pivot = int_list[end]
@@ -67,10 +95,15 @@ def partition(int_list, start, end):
 
   return i + 1
 
-  
+    
 def insertion(int_list):
   '''
-  insertion docstring
+  Sort a list using Insertion Sort
+
+  Parameters
+  ----------
+  int_list : list of ints
+    list to be sorted
   '''
   
   for i in range(1, len(int_list)):
