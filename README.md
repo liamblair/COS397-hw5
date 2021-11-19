@@ -1,55 +1,48 @@
 # COS 397 Exercise
 
-The goal of this exercise is to implement a Python package for sorting integer 
-lists using the DevOps software development approach.
 
 **Warning**: If working on windows, some directories and files in this archive
 will not be visible because they start with a '.'. In the file browser, change 
 the View to display "Hidden items".
 
-You will need to:
-1. Implement the algorithms for bubble, quick and insertion sort, see sort_lib directory,
-code should be documented using standard Python practices (there are several [docstring 
-styles](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)
-select one and be consistent).
-2. Implement testing using the [pytest](https://docs.pytest.org/en/6.2.x/) framework, see test directory.
-3. Implement linting, style checking using both [flake8](https://flake8.pycqa.org/en/latest/) and 
-[black](https://black.readthedocs.io/en/stable/). 
-4. Modify the GitHub actions workflow so that it tests and builds the package for all 
-three operating systems (OSX/Linux/Win) and for Python versions 3.6 and 3.9.
-5. Modify this file to describe this repository and the DevOps workflow you 
-implemented (add badges to this file showing testing status).
-
-Possible work division, three sub-teams:
-1. Implementing algorithm code and documentation (tasks 1,5).
-2. Implementing testing code, mastering pytest, black, flake8 (tasks 2,3,5).
-3. Understanding pytest, black, flake8 and mastering GitHub workflows (tasks 4,5).
 __________________________________________________________________________________
 (MAKE CHANGES TO TO README BELOW, REMOVE ABOVE BEFORE FINAL SUBMISSION)
 # Integral Solutions - Homework 5
 
-The goal of this exercise is to implement a Python package for sorting integer 
+The goal of this exercise was to implement a Python package for sorting integer 
 lists using the DevOps software development approach.
 
-**Warning**: If working on windows, some directories and files in this archive
-will not be visible because they start with a '.'. In the file browser, change 
-the View to display "Hidden items".
-
+## Outline of Tasks
 We needed to:
-1. Implement the algorithms for bubble, quick and insertion sort, see sort_lib directory,
-code should be documented using standard Python practices (there are several [docstring 
-styles](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)
-select one and be consistent).
-2. Implement testing using the [pytest](https://docs.pytest.org/en/6.2.x/) framework, see test directory.
-3. Implement linting, style checking using both [flake8](https://flake8.pycqa.org/en/latest/) and 
+1. Implement the algorithms for bubble, quick and insertion sort where code was documented using
+standard Python practices, (see [docstring 
+styles](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format))
+2. Implement testing using the [pytest](https://docs.pytest.org/en/6.2.x/) framework.
+3. Implement linting and style checking using both [flake8](https://flake8.pycqa.org/en/latest/) and 
 [black](https://black.readthedocs.io/en/stable/). 
-4. Modify the GitHub actions workflow so that it tests and builds the package for all 
+4. Modify the GitHub actions workflow so that it tested and built the package for all 
 three operating systems (OSX/Linux/Win) and for Python versions 3.6 and 3.9.
 5. Modify this file to describe this repository and the DevOps workflow you 
-implemented (add badges to this file showing testing status).
+implemented (see below for the workflow badge).
 
-## Division of Tasks
-1. Implementing algorithm code and documentation (tasks 1, 5) - **Liam**
-2. Implementing testing code and mastering pytest (tasks 2, 5) - **Mac**
-3. Implementing style checking and linting, mastering black, flake8 (tasks 3, 5) - **Aaron**
-4. Understanding pytest, black, flake8 and mastering GitHub workflows (tasks 4,5) **Vincent** _and_ **Peter**
+[![Sort Lib](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml/badge.svg)](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml)
+
+#### Division of Tasks and (Optional GitHub) Writeups
+
+_These are writeups that are potentially separate from our individual writeups._
+
+###### Liam
+
+> Implementing algorithm code and documentation (tasks 1, 5)
+
+###### Aaron
+
+> Implementing style checking and linting, mastering black, flake8 (tasks 3, 5)
+
+###### Mac
+
+> Implementing testing code and mastering pytest (tasks 2, 5)
+
+###### Peter and Vincent
+
+> Understanding pytest, black, flake8 and mastering GitHub workflows (tasks 4,5)
