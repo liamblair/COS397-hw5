@@ -47,7 +47,6 @@ jobs:
       run: |
         python -m pytest
 
-'''
   packaging:
     # only run the packaging if testing passed
     needs: test
@@ -78,4 +77,3 @@ jobs:
       with:
         name: python-packages
         path: dist
-'''
