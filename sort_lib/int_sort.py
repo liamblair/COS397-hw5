@@ -37,6 +37,7 @@ def bubble(int_list):
         int_list[j] = int_list[j+1]
         int_list[j+1] = tmp
 
+  return int_list
   
 def quick(int_list, start, end):
   '''
@@ -56,7 +57,8 @@ def quick(int_list, start, end):
     pivot = partition(int_list, start, end)
     quick(int_list, start, pivot-1)
     quick(int_list, pivot+1, end)
-        
+
+  return int_list
 
 def partition(int_list, start, end):
   '''
@@ -114,3 +116,5 @@ def insertion(int_list):
       int_list[j+1] = int_list[j]
       j -= 1
     int_list[j+1] = val
+
+  return int_list
