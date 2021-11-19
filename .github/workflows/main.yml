@@ -7,6 +7,7 @@ on:
     branches: [ main ]
       
 jobs:
+'''
   linting:
     runs-on: ubuntu-latest
     steps:
@@ -25,11 +26,11 @@ jobs:
     - name: Lint with flake8
       run: |
         python -m flake8 . --show-source --statistics
-
+'''
 
   test:
     # only run the code testing if linting passed
-    needs: linting
+    # needs: linting
     strategy:
 	    matrix:
         python-version: [3.6, 3.9]
@@ -48,7 +49,7 @@ jobs:
       run: |
         python -m pytest
 
-
+'''
   packaging:
     # only run the packaging if testing passed
     needs: test
@@ -79,3 +80,4 @@ jobs:
       with:
         name: python-packages
         path: dist
+'''
