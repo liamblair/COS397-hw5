@@ -27,8 +27,7 @@ implemented (see below for the workflow badge).
 
 [![Sort Lib](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml/badge.svg)](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml)
 
-### Division of Tasks and (Optional GitHub) Writeups
-_These are writeups that are potentially separate from our individual writeups._
+### Division of Tasks
 
 ##### Liam
 > Implementing algorithm code and documentation (tasks 1, 5)
