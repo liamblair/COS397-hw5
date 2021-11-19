@@ -27,22 +27,17 @@ implemented (see below for the workflow badge).
 
 [![Sort Lib](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml/badge.svg)](https://github.com/liamblair/COS397-hw5/actions/workflows/main.yml)
 
-#### Division of Tasks and (Optional GitHub) Writeups
-
+### Division of Tasks and (Optional GitHub) Writeups
 _These are writeups that are potentially separate from our individual writeups._
 
-###### Liam
-
+##### Liam
 > Implementing algorithm code and documentation (tasks 1, 5)
 
-###### Aaron
-
+##### Aaron
 > Implementing style checking and linting, mastering black, flake8 (tasks 3, 5)
 
-###### Mac
-
+##### Mac
 > Implementing testing code and mastering pytest (tasks 2, 5)
 
-###### Peter and Vincent
-
+##### Peter and Vincent
 > Understanding pytest, black, flake8 and mastering GitHub workflows (tasks 4,5)
