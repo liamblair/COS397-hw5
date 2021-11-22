@@ -25,9 +25,11 @@ jobs:
     - name: Lint with black
       run: |
         python -m black --check --diff .
+        black int_sort.py --check
     - name: Lint with flake8
       run: |
         python -m flake8 . --show-source --statistics
+        flake8 int_sort.py
 
   test:
     # only run the code testing if linting passed
