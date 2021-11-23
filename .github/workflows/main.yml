@@ -24,12 +24,10 @@ jobs:
         pip install -r requirements-dev.txt
     - name: Lint with black
       run: |
-        python -m black --check --diff .
-        black int_sort.py --check
+        python -m black .
     - name: Lint with flake8
       run: |
-        python -m flake8 . --show-source --statistics
-        flake8 int_sort.py
+        python -m flake8 . --show-source --statistics --ignore=W391
 
   test:
     # only run the code testing if linting passed
