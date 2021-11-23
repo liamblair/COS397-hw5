@@ -31,7 +31,7 @@ jobs:
 
   test:
     # only run the code testing if linting passed
-    needs: linting
+    #needs: linting
     strategy:
       matrix:
         python-version: [3.6, 3.9]
