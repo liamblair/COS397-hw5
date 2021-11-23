@@ -1,12 +1,3 @@
-# COS 397 Exercise
-
-
-**Warning**: If working on windows, some directories and files in this archive
-will not be visible because they start with a '.'. In the file browser, change 
-the View to display "Hidden items".
-
-__________________________________________________________________________________
-(MAKE CHANGES TO TO README BELOW, REMOVE ABOVE BEFORE FINAL SUBMISSION)
 # Integral Solutions - Homework 5
 
 The goal of this exercise was to implement a Python package for sorting integer 
