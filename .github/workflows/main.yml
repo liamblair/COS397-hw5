@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{matrix.latest-list}}
     strategy:
       matrix:
-        latest-list: [ubuntu-latest, windows-2022, macos-latest]
+        latest-list: [ubuntu-latest, windows-latest, macos-latest]
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
@@ -35,7 +35,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.6, 3.9]
-        latest-list: [ubuntu-latest, windows-2022, macos-latest]
+        latest-list: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{matrix.latest-list}}
     steps:
     - uses: actions/checkout@v2
@@ -57,7 +57,7 @@ jobs:
     strategy:
       matrix:
         python-version: [3.6, 3.9]
-        latest-list: [ubuntu-latest, windows-2022, macos-latest]
+        latest-list: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{matrix.latest-list}}
     steps:
     - uses: actions/checkout@v2
